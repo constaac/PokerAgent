@@ -17,6 +17,8 @@
 		A49187BD20ACB6DA00CF9CC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A49187BB20ACB6DA00CF9CC9 /* Main.storyboard */; };
 		A49187BF20ACB6DA00CF9CC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A49187BE20ACB6DA00CF9CC9 /* Assets.xcassets */; };
 		A49187C220ACB6DA00CF9CC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A49187C020ACB6DA00CF9CC9 /* LaunchScreen.storyboard */; };
+		A49F686E20ACEFCF00B4EA34 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49F686D20ACEFCF00B4EA34 /* Table.swift */; };
+		A49F687020ACF25200B4EA34 /* ActiveSessionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49F686F20ACF25200B4EA34 /* ActiveSessionVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		A49187BE20ACB6DA00CF9CC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A49187C120ACB6DA00CF9CC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A49187C320ACB6DA00CF9CC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A49F686D20ACEFCF00B4EA34 /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
+		A49F686F20ACF25200B4EA34 /* ActiveSessionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveSessionVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +90,7 @@
 		A49187B620ACB6DA00CF9CC9 /* PokerAgent */ = {
 			isa = PBXGroup;
 			children = (
-				A49187CD20ACB92700CF9CC9 /* Structs */,
+				A49F686C20ACEF2500B4EA34 /* GameLogic */,
 				A49187CC20ACB91F00CF9CC9 /* Views */,
 				A49187CB20ACB91800CF9CC9 /* ViewControllers */,
 				A49187CA20ACB91000CF9CC9 /* Services */,
@@ -122,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				A49187B920ACB6DA00CF9CC9 /* HomeVC.swift */,
+				A49F686F20ACF25200B4EA34 /* ActiveSessionVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -133,11 +138,12 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		A49187CD20ACB92700CF9CC9 /* Structs */ = {
+		A49F686C20ACEF2500B4EA34 /* GameLogic */ = {
 			isa = PBXGroup;
 			children = (
+				A49F686D20ACEFCF00B4EA34 /* Table.swift */,
 			);
-			path = Structs;
+			path = GameLogic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +261,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A42054DA20ACBDBA00B481FA /* Session.swift in Sources */,
+				A49F687020ACF25200B4EA34 /* ActiveSessionVC.swift in Sources */,
+				A49F686E20ACEFCF00B4EA34 /* Table.swift in Sources */,
 				A49187BA20ACB6DA00CF9CC9 /* HomeVC.swift in Sources */,
 				A42054D820ACBDA100B481FA /* RealmService.swift in Sources */,
 				A42054DC20ACBDEE00B481FA /* Player.swift in Sources */,
