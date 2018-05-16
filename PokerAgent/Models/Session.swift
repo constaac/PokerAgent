@@ -16,12 +16,12 @@ import RealmSwift
     dynamic var location: String = ""
     dynamic var handsObserved: Int16 = 0
     dynamic var chipPosition: Int8 = 0
-    dynamic var players: [String] = []
+    dynamic var playerSessions: [String] = []
     
-    convenience init(location: String, players: [String]) {
+    convenience init(location: String, playerSessions: [String]) {
         self.init()
         self.location = location
-        self.players = players
+        self.playerSessions = playerSessions
     }
     
     override static func primaryKey() -> String? {
