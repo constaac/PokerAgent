@@ -11,6 +11,7 @@
 		A42054D820ACBDA100B481FA /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42054D720ACBDA100B481FA /* RealmService.swift */; };
 		A42054DA20ACBDBA00B481FA /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42054D920ACBDBA00B481FA /* Session.swift */; };
 		A42054DC20ACBDEE00B481FA /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42054DB20ACBDEE00B481FA /* Player.swift */; };
+		A42054DE20ACC53600B481FA /* Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42054DD20ACC53600B481FA /* Statistics.swift */; };
 		A49187B820ACB6DA00CF9CC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49187B720ACB6DA00CF9CC9 /* AppDelegate.swift */; };
 		A49187BA20ACB6DA00CF9CC9 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49187B920ACB6DA00CF9CC9 /* HomeVC.swift */; };
 		A49187BD20ACB6DA00CF9CC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A49187BB20ACB6DA00CF9CC9 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		A42054D720ACBDA100B481FA /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
 		A42054D920ACBDBA00B481FA /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		A42054DB20ACBDEE00B481FA /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		A42054DD20ACC53600B481FA /* Statistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistics.swift; sourceTree = "<group>"; };
 		A49187B420ACB6DA00CF9CC9 /* PokerAgent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokerAgent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A49187B720ACB6DA00CF9CC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A49187B920ACB6DA00CF9CC9 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -84,7 +86,7 @@
 		A49187B620ACB6DA00CF9CC9 /* PokerAgent */ = {
 			isa = PBXGroup;
 			children = (
-				A49187CD20ACB92700CF9CC9 /* Classes */,
+				A49187CD20ACB92700CF9CC9 /* Structs */,
 				A49187CC20ACB91F00CF9CC9 /* Views */,
 				A49187CB20ACB91800CF9CC9 /* ViewControllers */,
 				A49187CA20ACB91000CF9CC9 /* Services */,
@@ -130,11 +132,12 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		A49187CD20ACB92700CF9CC9 /* Classes */ = {
+		A49187CD20ACB92700CF9CC9 /* Structs */ = {
 			isa = PBXGroup;
 			children = (
+				A42054DD20ACC53600B481FA /* Statistics.swift */,
 			);
-			path = Classes;
+			path = Structs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +258,7 @@
 				A49187BA20ACB6DA00CF9CC9 /* HomeVC.swift in Sources */,
 				A42054D820ACBDA100B481FA /* RealmService.swift in Sources */,
 				A42054DC20ACBDEE00B481FA /* Player.swift in Sources */,
+				A42054DE20ACC53600B481FA /* Statistics.swift in Sources */,
 				A49187B820ACB6DA00CF9CC9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
