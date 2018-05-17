@@ -19,12 +19,14 @@ import RealmSwift
     dynamic var sessions: List<Session> = List<Session>()
     dynamic var currentSession: Session? = nil
     
-    convenience init(sessionID: String, isUser: Bool?, comments: String?) {
+    convenience init(isUser: Bool?, comments: String?) {
         self.init()
         if let isUser = isUser {
             self.isUser = isUser
         }
-        self.comments = comments
+        if let comments = comments {
+            self.comments = comments
+        }
     }
     
     func addSession() -> Void {
@@ -33,6 +35,14 @@ import RealmSwift
     
     func removeSession() -> Void {
         
+    }
+    
+    func setCurrentSession(session: Session?) {
+        if let session = session {
+            self.currentSession = session
+        } else {
+            self.currentSession = nil
+        }
     }
     
     override static func primaryKey() -> String? {
