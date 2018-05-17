@@ -12,7 +12,7 @@ import RealmSwift
 class ActiveSessionVC: UIViewController {
     
     var realm = RealmService.shared.realm
-    var currentSession: Session!
+    var currentSession: Session?
     
     
     @IBOutlet weak var betButton: UIButton!
@@ -25,8 +25,12 @@ class ActiveSessionVC: UIViewController {
         
     }
     
-    func setCurrentSession(session: Session) -> Void {
-        self.currentSession = session
+    func setCurrentSession(session: Session?) -> Void {
+        if let session = session {
+            self.currentSession = session
+        } else {
+            self.currentSession = nil
+        }
     }
     
     

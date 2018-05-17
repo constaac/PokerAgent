@@ -14,23 +14,48 @@ import RealmSwift
     dynamic var startDate: Date = Date()
     dynamic var endDate: Date? = nil
     dynamic var location: String = ""
-    dynamic var handsObserved: Int16 = 0
+    dynamic var totalHands: Int16 = 0
     dynamic var chipPosition: Int8 = 0
-    dynamic var players: List<Player> = List<Player>()
+    dynamic var roundActive = false
+    dynamic var playerSessions = List<PlayerSession>()
     
     convenience init(location: String) {
         self.init()
         self.location = location
     }
     
-    func addPlayer(player: Player) -> Void {
-        players.append(player)
+    func addPlayerSession(playerSession: PlayerSession) -> Void {
+        self.playerSessions.append(playerSession)
     }
     
-    func removePlayer(player: Player) -> Void {
-        let playerIndex = players.index(of: player)
-        if let playerIndex = playerIndex {
-            players.remove(at: playerIndex)
+    func removePlayerSession(playerSession: PlayerSession) -> Void {
+        let playerSessionIndex = self.playerSessions.index(of: playerSession)
+        if let playerSessionIndex = playerSessionIndex {
+            self.playerSessions.remove(at: playerSessionIndex)
+        }
+    }
+    
+    func editLocation(location: String) -> Void {
+        self.location = location
+    }
+    
+    func setEndDate() -> Void {
+        self.endDate = Date()
+    }
+    
+    func startRound() -> Void {
+        self.roundActive = true
+    }
+    
+    func endRound() -> Void {
+        self.roundActive = false
+        self.totalHands += 1
+    }
+    
+    func setChipPositionAtPlayer(playerSession: PlayerSession) -> Void {
+        let playerSessionIndex = self.playerSessions.index(of: playerSession)
+        if let playerSessionIndex = playerSessionIndex {
+            self.chipPosition = Int8(playerSessionIndex)
         }
     }
     

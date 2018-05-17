@@ -18,6 +18,9 @@
 		A49187C220ACB6DA00CF9CC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A49187C020ACB6DA00CF9CC9 /* LaunchScreen.storyboard */; };
 		A49F686E20ACEFCF00B4EA34 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49F686D20ACEFCF00B4EA34 /* Table.swift */; };
 		A49F687020ACF25200B4EA34 /* ActiveSessionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49F686F20ACF25200B4EA34 /* ActiveSessionVC.swift */; };
+		A49F687220AE1C4A00B4EA34 /* Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49F687120AE1C4A00B4EA34 /* Statistics.swift */; };
+		A49F687420AE1DC000B4EA34 /* PlayerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49F687320AE1DC000B4EA34 /* PlayerSession.swift */; };
+		A49F687720AE2FFC00B4EA34 /* AgeRanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49F687620AE2FFC00B4EA34 /* AgeRanges.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		A49187C320ACB6DA00CF9CC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A49F686D20ACEFCF00B4EA34 /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
 		A49F686F20ACF25200B4EA34 /* ActiveSessionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveSessionVC.swift; sourceTree = "<group>"; };
+		A49F687120AE1C4A00B4EA34 /* Statistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistics.swift; sourceTree = "<group>"; };
+		A49F687320AE1DC000B4EA34 /* PlayerSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSession.swift; sourceTree = "<group>"; };
+		A49F687620AE2FFC00B4EA34 /* AgeRanges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeRanges.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,7 @@
 		A49187B620ACB6DA00CF9CC9 /* PokerAgent */ = {
 			isa = PBXGroup;
 			children = (
+				A49F687520AE2FEA00B4EA34 /* Enumerations */,
 				A49F686C20ACEF2500B4EA34 /* GameLogic */,
 				A49187CC20ACB91F00CF9CC9 /* Views */,
 				A49187CB20ACB91800CF9CC9 /* ViewControllers */,
@@ -107,6 +114,7 @@
 			children = (
 				A42054D920ACBDBA00B481FA /* Session.swift */,
 				A42054DB20ACBDEE00B481FA /* Player.swift */,
+				A49F687320AE1DC000B4EA34 /* PlayerSession.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -139,8 +147,17 @@
 			isa = PBXGroup;
 			children = (
 				A49F686D20ACEFCF00B4EA34 /* Table.swift */,
+				A49F687120AE1C4A00B4EA34 /* Statistics.swift */,
 			);
 			path = GameLogic;
+			sourceTree = "<group>";
+		};
+		A49F687520AE2FEA00B4EA34 /* Enumerations */ = {
+			isa = PBXGroup;
+			children = (
+				A49F687620AE2FFC00B4EA34 /* AgeRanges.swift */,
+			);
+			path = Enumerations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,10 +276,13 @@
 			files = (
 				A42054DA20ACBDBA00B481FA /* Session.swift in Sources */,
 				A49F687020ACF25200B4EA34 /* ActiveSessionVC.swift in Sources */,
+				A49F687420AE1DC000B4EA34 /* PlayerSession.swift in Sources */,
 				A49F686E20ACEFCF00B4EA34 /* Table.swift in Sources */,
 				A49187BA20ACB6DA00CF9CC9 /* HomeVC.swift in Sources */,
+				A49F687720AE2FFC00B4EA34 /* AgeRanges.swift in Sources */,
 				A42054D820ACBDA100B481FA /* RealmService.swift in Sources */,
 				A42054DC20ACBDEE00B481FA /* Player.swift in Sources */,
+				A49F687220AE1C4A00B4EA34 /* Statistics.swift in Sources */,
 				A49187B820ACB6DA00CF9CC9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
