@@ -7,20 +7,33 @@
 //
 
 import UIKit
+import RealmSwift
 
 class ActiveSessionVC: UIViewController {
-
+    
+    var realm = RealmService.shared.realm
+    var currentSession: Session!
+    
+    
+    @IBOutlet weak var betButton: UIButton!
+    @IBOutlet weak var callButton: UIButton!
+    @IBOutlet weak var checkButton: UIButton!
+    @IBOutlet weak var foldButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
-
+    
+    func setCurrentSession(session: Session) -> Void {
+        self.currentSession = session
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     /*
     // MARK: - Navigation

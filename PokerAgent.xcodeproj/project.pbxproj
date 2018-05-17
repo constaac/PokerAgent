@@ -11,7 +11,6 @@
 		A42054D820ACBDA100B481FA /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42054D720ACBDA100B481FA /* RealmService.swift */; };
 		A42054DA20ACBDBA00B481FA /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42054D920ACBDBA00B481FA /* Session.swift */; };
 		A42054DC20ACBDEE00B481FA /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42054DB20ACBDEE00B481FA /* Player.swift */; };
-		A42054E020ACD56700B481FA /* PlayerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42054DF20ACD56700B481FA /* PlayerSession.swift */; };
 		A49187B820ACB6DA00CF9CC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49187B720ACB6DA00CF9CC9 /* AppDelegate.swift */; };
 		A49187BA20ACB6DA00CF9CC9 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49187B920ACB6DA00CF9CC9 /* HomeVC.swift */; };
 		A49187BD20ACB6DA00CF9CC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A49187BB20ACB6DA00CF9CC9 /* Main.storyboard */; };
@@ -28,7 +27,6 @@
 		A42054D720ACBDA100B481FA /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
 		A42054D920ACBDBA00B481FA /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		A42054DB20ACBDEE00B481FA /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		A42054DF20ACD56700B481FA /* PlayerSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSession.swift; sourceTree = "<group>"; };
 		A49187B420ACB6DA00CF9CC9 /* PokerAgent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokerAgent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A49187B720ACB6DA00CF9CC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A49187B920ACB6DA00CF9CC9 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 			children = (
 				A42054D920ACBDBA00B481FA /* Session.swift */,
 				A42054DB20ACBDEE00B481FA /* Player.swift */,
-				A42054DF20ACD56700B481FA /* PlayerSession.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -267,7 +264,6 @@
 				A42054D820ACBDA100B481FA /* RealmService.swift in Sources */,
 				A42054DC20ACBDEE00B481FA /* Player.swift in Sources */,
 				A49187B820ACB6DA00CF9CC9 /* AppDelegate.swift in Sources */,
-				A42054E020ACD56700B481FA /* PlayerSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +408,7 @@
 			baseConfigurationReference = 1F0D1BE6762D4EFC55CA4C50 /* Pods-PokerAgent.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6H3MF736FD;
 				INFOPLIST_FILE = PokerAgent/Info.plist;
@@ -421,6 +418,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexconstantine.PokerAgent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -431,6 +429,7 @@
 			baseConfigurationReference = 0CFF55BFB4CC1FD6BB433521 /* Pods-PokerAgent.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6H3MF736FD;
 				INFOPLIST_FILE = PokerAgent/Info.plist;
@@ -440,6 +439,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexconstantine.PokerAgent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
