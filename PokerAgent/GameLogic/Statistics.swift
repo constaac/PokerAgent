@@ -16,4 +16,8 @@ struct Statistics {
     
     var handsSeen: Int = 0
     
+    mutating func incrementHandsSeen() {
+        self.handsSeen = self.handsSeen + 1
+    }
+    
 }

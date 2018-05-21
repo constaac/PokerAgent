@@ -9,10 +9,14 @@
 import Realm
 import RealmSwift
 
+// Detachable Protocol Allows storing a detatched copy of a realm object in memory
+// to then pass directly into a Realm Update for Persistence
+
 protocol DetachableObject: AnyObject {
     func detached() -> Self
 }
 
+// Implementation for Realm Objects
 extension Object: DetachableObject {
     func detached() -> Self {
         let detached = type(of: self).init()
@@ -30,6 +34,7 @@ extension Object: DetachableObject {
     }
 }
 
+// Implementation for Lists
 extension List: DetachableObject {
     func detached() -> List<Element> {
         let result = List<Element>()

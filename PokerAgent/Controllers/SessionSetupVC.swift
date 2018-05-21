@@ -1,36 +1,26 @@
 //
-//  ActiveSessionVC.swift
+//  SessionSetupVC.swift
 //  PokerAgent
 //
-//  Created by Alex Constantine on 5/16/18.
+//  Created by Alex Constantine on 5/21/18.
 //  Copyright © 2018 Alex Constantine. All rights reserved.
 //
 
 import UIKit
-import RealmSwift
 
-class ActiveSessionVC: UIViewController {
-    
-    var realm = RealmService.shared.realm
-    var players: Results<Player>!
-    
-    
-    @IBOutlet weak var betButton: ActionButton!
-    @IBOutlet weak var callButton: ActionButton!
-    @IBOutlet weak var checkButton: ActionButton!
-    @IBOutlet weak var foldButton: ActionButton!
-    
+class SessionSetupVC: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
- 
+        // Do any additional setup after loading the view.
     }
-    
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
     /*
     // MARK: - Navigation

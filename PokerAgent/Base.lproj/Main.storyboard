@@ -25,6 +25,21 @@
             </objects>
             <point key="canvasLocation" x="-90" y="133"/>
         </scene>
+        <!--Session SetupVC-->
+        <scene sceneID="iTr-EL-u0O">
+            <objects>
+                <viewController id="zeC-bX-fAZ" customClass="SessionSetupVC" customModule="PokerAgent" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jhb-ZP-1kD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="w1M-QT-Nk1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MY4-Dv-CY2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1674" y="133"/>
+        </scene>
         <!--Active SessionVC-->
         <scene sceneID="Hsv-SY-IZO">
             <objects>

@@ -22,6 +22,9 @@
 		A49F687420AE1DC000B4EA34 /* PlayerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49F687320AE1DC000B4EA34 /* PlayerSession.swift */; };
 		A49F687720AE2FFC00B4EA34 /* AgeRanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49F687620AE2FFC00B4EA34 /* AgeRanges.swift */; };
 		A49F687920B0AE6500B4EA34 /* DetachObjectService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49F687820B0AE6500B4EA34 /* DetachObjectService.swift */; };
+		A4F58FD620B348B1009808F3 /* SessionSetupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F58FD520B348B1009808F3 /* SessionSetupVC.swift */; };
+		A4F58FD820B3492F009808F3 /* StatisticsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F58FD720B3492F009808F3 /* StatisticsCard.swift */; };
+		A4F58FDA20B349A3009808F3 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F58FD920B349A3009808F3 /* ActionButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		A49F687320AE1DC000B4EA34 /* PlayerSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSession.swift; sourceTree = "<group>"; };
 		A49F687620AE2FFC00B4EA34 /* AgeRanges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeRanges.swift; sourceTree = "<group>"; };
 		A49F687820B0AE6500B4EA34 /* DetachObjectService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetachObjectService.swift; sourceTree = "<group>"; };
+		A4F58FD520B348B1009808F3 /* SessionSetupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionSetupVC.swift; sourceTree = "<group>"; };
+		A4F58FD720B3492F009808F3 /* StatisticsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsCard.swift; sourceTree = "<group>"; };
+		A4F58FD920B349A3009808F3 /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +141,7 @@
 			children = (
 				A49187B920ACB6DA00CF9CC9 /* HomeVC.swift */,
 				A49F686F20ACF25200B4EA34 /* ActiveSessionVC.swift */,
+				A4F58FD520B348B1009808F3 /* SessionSetupVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -142,6 +149,8 @@
 		A49187CC20ACB91F00CF9CC9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A4F58FD720B3492F009808F3 /* StatisticsCard.swift */,
+				A4F58FD920B349A3009808F3 /* ActionButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -283,11 +292,14 @@
 				A49F686E20ACEFCF00B4EA34 /* Table.swift in Sources */,
 				A49187BA20ACB6DA00CF9CC9 /* HomeVC.swift in Sources */,
 				A49F687720AE2FFC00B4EA34 /* AgeRanges.swift in Sources */,
+				A4F58FD820B3492F009808F3 /* StatisticsCard.swift in Sources */,
 				A49F687920B0AE6500B4EA34 /* DetachObjectService.swift in Sources */,
 				A42054D820ACBDA100B481FA /* RealmService.swift in Sources */,
 				A42054DC20ACBDEE00B481FA /* Player.swift in Sources */,
+				A4F58FD620B348B1009808F3 /* SessionSetupVC.swift in Sources */,
 				A49F687220AE1C4A00B4EA34 /* Statistics.swift in Sources */,
 				A49187B820ACB6DA00CF9CC9 /* AppDelegate.swift in Sources */,
+				A4F58FDA20B349A3009808F3 /* ActionButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

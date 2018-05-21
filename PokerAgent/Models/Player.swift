@@ -5,6 +5,7 @@
 //  Created by Alex Constantine on 5/16/18.
 //  Copyright © 2018 Alex Constantine. All rights reserved.
 //
+// Represents Both Named and Anonymous Players
 
 import Foundation
 import RealmSwift
@@ -38,6 +39,10 @@ import RealmSwift
         }
     }
     
+    
+    // GETTERS and SETTERS
+    // ---------------------------------------------------------------------------------
+
     func addPlayerSession(playerSession: PlayerSession) -> Void {
         self.playerSessions.append(playerSession)
     }
