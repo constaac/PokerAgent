@@ -10,17 +10,17 @@ import Foundation
 import RealmSwift
 
 @objcMembers class Player: Object {
-    dynamic var id = 0
+    dynamic var id = UUID().uuidString
     dynamic var name: String = "Anon"
     dynamic var isUser: Bool = false
     dynamic var isAnon: Bool = true
-    dynamic var isMale: Bool?
-    dynamic var ageRange: AgeRange?
+    dynamic var isMale: Bool = true
+    dynamic var ageRange: String? = "Unspecified"
     dynamic var comments: String? = ""
     dynamic var discoveryDate: Date = Date()
     dynamic var playerSessions = List<PlayerSession>()
     
-    convenience init(isMale: Bool, name: String?, isUser: Bool?, comments: String?, ageRange: AgeRange?) {
+    convenience init(isMale: Bool, name: String?, isUser: Bool?, comments: String? = "", ageRange: String?) {
         self.init()
         self.isMale = isMale
         if let name = name {
@@ -58,7 +58,7 @@ import RealmSwift
         self.comments = comments
     }
     
-    func setAgeRange(ageRange: AgeRange) -> Void {
+    func setAgeRange(ageRange: String) -> Void {
         self.ageRange = ageRange
     }
     
