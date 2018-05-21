@@ -21,6 +21,7 @@
 		A49F687220AE1C4A00B4EA34 /* Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49F687120AE1C4A00B4EA34 /* Statistics.swift */; };
 		A49F687420AE1DC000B4EA34 /* PlayerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49F687320AE1DC000B4EA34 /* PlayerSession.swift */; };
 		A49F687720AE2FFC00B4EA34 /* AgeRanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49F687620AE2FFC00B4EA34 /* AgeRanges.swift */; };
+		A49F687920B0AE6500B4EA34 /* DetachObjectService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49F687820B0AE6500B4EA34 /* DetachObjectService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		A49F687120AE1C4A00B4EA34 /* Statistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistics.swift; sourceTree = "<group>"; };
 		A49F687320AE1DC000B4EA34 /* PlayerSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSession.swift; sourceTree = "<group>"; };
 		A49F687620AE2FFC00B4EA34 /* AgeRanges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeRanges.swift; sourceTree = "<group>"; };
+		A49F687820B0AE6500B4EA34 /* DetachObjectService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetachObjectService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +96,10 @@
 		A49187B620ACB6DA00CF9CC9 /* PokerAgent */ = {
 			isa = PBXGroup;
 			children = (
-				A49F687520AE2FEA00B4EA34 /* Enumerations */,
+				A49F687520AE2FEA00B4EA34 /* Enums */,
 				A49F686C20ACEF2500B4EA34 /* GameLogic */,
 				A49187CC20ACB91F00CF9CC9 /* Views */,
-				A49187CB20ACB91800CF9CC9 /* ViewControllers */,
+				A49187CB20ACB91800CF9CC9 /* Controllers */,
 				A49187CA20ACB91000CF9CC9 /* Services */,
 				A49187C920ACB90800CF9CC9 /* Models */,
 				A49187B720ACB6DA00CF9CC9 /* AppDelegate.swift */,
@@ -123,17 +125,18 @@
 			isa = PBXGroup;
 			children = (
 				A42054D720ACBDA100B481FA /* RealmService.swift */,
+				A49F687820B0AE6500B4EA34 /* DetachObjectService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
 		};
-		A49187CB20ACB91800CF9CC9 /* ViewControllers */ = {
+		A49187CB20ACB91800CF9CC9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				A49187B920ACB6DA00CF9CC9 /* HomeVC.swift */,
 				A49F686F20ACF25200B4EA34 /* ActiveSessionVC.swift */,
 			);
-			path = ViewControllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		A49187CC20ACB91F00CF9CC9 /* Views */ = {
@@ -152,12 +155,12 @@
 			path = GameLogic;
 			sourceTree = "<group>";
 		};
-		A49F687520AE2FEA00B4EA34 /* Enumerations */ = {
+		A49F687520AE2FEA00B4EA34 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
 				A49F687620AE2FFC00B4EA34 /* AgeRanges.swift */,
 			);
-			path = Enumerations;
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +283,7 @@
 				A49F686E20ACEFCF00B4EA34 /* Table.swift in Sources */,
 				A49187BA20ACB6DA00CF9CC9 /* HomeVC.swift in Sources */,
 				A49F687720AE2FFC00B4EA34 /* AgeRanges.swift in Sources */,
+				A49F687920B0AE6500B4EA34 /* DetachObjectService.swift in Sources */,
 				A42054D820ACBDA100B481FA /* RealmService.swift in Sources */,
 				A42054DC20ACBDEE00B481FA /* Player.swift in Sources */,
 				A49F687220AE1C4A00B4EA34 /* Statistics.swift in Sources */,
