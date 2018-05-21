@@ -9,10 +9,22 @@
 import Foundation
 import RealmSwift
 
-class GameLogic {
+class Table {
     
-    let realm = RealmService.shared.realm
-//    var currentPlayerSessions: Results<PlayerSession.self>!
+    // Disable Instantiation
+    private init() {}
+    
+    static let shared = Table()
+    var session = Session()
+    
+    func populatePlayerSessions() {
+//        session.addPlayerSession(playerSession: <#T##PlayerSession#>)
+    }
+    
+    func setSession(session: Session) {
+        self.session = session
+    }
+    
     
     func betAction() {
         
