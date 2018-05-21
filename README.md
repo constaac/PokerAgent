@@ -1,4 +1,4 @@
-<img src="https://github.com/constaac/PokerAgent/blob/development/POKER%20AGENT%20ROUGH%20LOGO-01.png?raw=true" width="200" height="200">
+<img src="https://github.com/constaac/PokerAgent/blob/development/POKER%20AGENT%20ROUGH%20LOGO-01.png?raw=true" width="300" height="300" align="middle">
 
 # PokerAgent
 
