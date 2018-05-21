@@ -19,7 +19,7 @@ class RealmService {
     func create<T: Object>(_ object: T) {
         do {
             try realm.write {
-                realm.add(object)
+                realm.add(object, update: true)
             }
         } catch {
             post(error)
