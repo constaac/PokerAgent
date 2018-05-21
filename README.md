@@ -1,4 +1,4 @@
-![PokerAgentLogo](PokerAgent/POKER AGENT ROUGH LOGO-01.png "PokerAgentLogo")
+![PokerAgentLogo](https://github.com/constaac/PokerAgent/blob/development/POKER%20AGENT%20ROUGH%20LOGO-01.png?raw=true)
 
 # PokerAgent
 
