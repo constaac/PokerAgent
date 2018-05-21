@@ -14,7 +14,7 @@ Four large buttons representing each action can be easily tapped without looking
 
 Suppose the user is interested in a very popular pre-flop statistic named VPIP.
 
-VPIP ("Voluntarily Puts Money in the Pot") is quantified as how often a player bets in any capacity without seing the flop.
+VPIP ("Voluntarily Puts Money in the Pot") is quantified as how often a player bets in any capacity without seeing the flop.
 
 [MyPokerHoldemTips](https://www.myholdempokertips.com/hud-stats-vpip) states a VPIP for a tight-aggressive player may be within the range of 16-22%.
 
