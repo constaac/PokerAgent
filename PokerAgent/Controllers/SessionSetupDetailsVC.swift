@@ -1,17 +1,18 @@
 //
-//  SessionSetupVC.swift
+//  SessionSetupDetailsVC.swift
 //  PokerAgent
 //
-//  Created by Alex Constantine on 5/21/18.
+//  Created by Alex Constantine on 5/29/18.
 //  Copyright © 2018 Alex Constantine. All rights reserved.
 //
 
 import UIKit
 
-class SessionSetupVC: UIViewController {
+class SessionSetupDetailsVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
 

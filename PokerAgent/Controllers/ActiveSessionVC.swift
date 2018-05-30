@@ -14,18 +14,24 @@ class ActiveSessionVC: UIViewController {
     var realm = RealmService.shared.realm
     var players: Results<Player>!
     
-    
     @IBOutlet weak var betButton: ActionButton!
     @IBOutlet weak var callButton: ActionButton!
     @IBOutlet weak var checkButton: ActionButton!
     @IBOutlet weak var foldButton: ActionButton!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
- 
+    @IBAction func homeTapped() {
+        self.navigationController?.isNavigationBarHidden = false
+        navigationController?.popToRootViewController(animated: true)
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = true
+        super.viewWillAppear(animated)
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
