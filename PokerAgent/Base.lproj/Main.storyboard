@@ -34,6 +34,9 @@
                                 <state key="normal" title="Player History">
                                     <color key="titleColor" red="1" green="0.94117647058823528" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Vqy-Hy-vXS" kind="show" id="hbh-gu-jdI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DxH-32-mnI">
                                 <rect key="frame" x="108" y="194" width="159" height="46"/>
@@ -52,6 +55,9 @@
                                 <state key="normal" title="Session History">
                                     <color key="titleColor" red="1" green="0.94117647058823528" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="wI5-Ws-d2X" kind="show" id="y9O-RC-ZKJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.68024946649999996" green="0.49112542180000002" blue="0.99262434239999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -110,6 +116,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MY4-Dv-CY2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2381.5999999999999" y="132.68365817091455"/>
+        </scene>
+        <!--Players-->
+        <scene sceneID="0Zi-B2-8Hv">
+            <objects>
+                <viewController id="Vqy-Hy-vXS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uFf-ue-VEy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="eLK-Ln-hlB">
+                                <rect key="frame" x="0.0" y="64" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Vqy-Hy-vXS" id="Eem-Zn-Ity"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rU3-yw-WVw">
+                                <rect key="frame" x="0.0" y="120" width="375" height="547"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.14080123740368411" blue="0.7177356869026178" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="rU3-yw-WVw" firstAttribute="leading" secondItem="jqU-Hx-WJD" secondAttribute="leading" id="CjK-bn-f9o"/>
+                            <constraint firstItem="rU3-yw-WVw" firstAttribute="top" secondItem="eLK-Ln-hlB" secondAttribute="bottom" id="Kgz-hC-2os"/>
+                            <constraint firstItem="eLK-Ln-hlB" firstAttribute="top" secondItem="jqU-Hx-WJD" secondAttribute="top" id="Vky-pV-g7w"/>
+                            <constraint firstItem="eLK-Ln-hlB" firstAttribute="leading" secondItem="jqU-Hx-WJD" secondAttribute="leading" id="ajV-Ed-ta5"/>
+                            <constraint firstItem="rU3-yw-WVw" firstAttribute="trailing" secondItem="jqU-Hx-WJD" secondAttribute="trailing" id="as8-4I-ghy"/>
+                            <constraint firstItem="rU3-yw-WVw" firstAttribute="bottom" secondItem="jqU-Hx-WJD" secondAttribute="bottom" id="i6a-QJ-Dvg"/>
+                            <constraint firstItem="eLK-Ln-hlB" firstAttribute="trailing" secondItem="jqU-Hx-WJD" secondAttribute="trailing" id="wfB-9q-MSh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jqU-Hx-WJD"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Players" id="a59-qp-Rej"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="ShE-c4-hUu" id="dcN-ZP-cF2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dEa-na-uNz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="ymM-LV-pu2">
+                    <connections>
+                        <outlet property="delegate" destination="Vqy-Hy-vXS" id="yee-ah-BEy"/>
+                        <outlet property="searchBar" destination="eLK-Ln-hlB" id="H4u-mw-ELj"/>
+                        <outlet property="searchContentsController" destination="Vqy-Hy-vXS" id="TmU-nf-7JH"/>
+                        <outlet property="searchResultsDataSource" destination="Vqy-Hy-vXS" id="xk9-Ui-LRh"/>
+                        <outlet property="searchResultsDelegate" destination="Vqy-Hy-vXS" id="l2y-aX-907"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="ShE-c4-hUu">
+                    <connections>
+                        <outlet property="delegate" destination="Vqy-Hy-vXS" id="QLc-mt-jwB"/>
+                        <outlet property="searchContentsController" destination="Vqy-Hy-vXS" id="hRb-Al-pkm"/>
+                        <outlet property="searchResultsDataSource" destination="Vqy-Hy-vXS" id="1ax-It-tnk"/>
+                        <outlet property="searchResultsDelegate" destination="Vqy-Hy-vXS" id="H8I-6D-2Pz"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="1637.5999999999999" y="-553.67316341829087"/>
         </scene>
         <!--Session Setup DetailsVC-->
         <scene sceneID="6VA-pA-0Gr">
@@ -200,6 +264,41 @@
             </objects>
             <point key="canvasLocation" x="1636" y="132.68365817091455"/>
         </scene>
+        <!--Sessions-->
+        <scene sceneID="enn-2b-0g5">
+            <objects>
+                <viewController id="wI5-Ws-d2X" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xlf-xe-Nlp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yO4-Xa-F8O">
+                                <rect key="frame" x="0.0" y="120" width="375" height="547"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="8OF-Dg-01E">
+                                <rect key="frame" x="0.0" y="64" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1369187892" green="1" blue="0.95193513969999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="yO4-Xa-F8O" firstAttribute="leading" secondItem="wW6-aL-rsj" secondAttribute="leading" id="1pq-IA-Pp4"/>
+                            <constraint firstItem="yO4-Xa-F8O" firstAttribute="bottom" secondItem="wW6-aL-rsj" secondAttribute="bottom" id="4Il-mD-ZZx"/>
+                            <constraint firstItem="yO4-Xa-F8O" firstAttribute="top" secondItem="8OF-Dg-01E" secondAttribute="bottom" id="BbZ-ZR-q9J"/>
+                            <constraint firstItem="yO4-Xa-F8O" firstAttribute="trailing" secondItem="wW6-aL-rsj" secondAttribute="trailing" id="QSH-GE-MAk"/>
+                            <constraint firstItem="8OF-Dg-01E" firstAttribute="top" secondItem="wW6-aL-rsj" secondAttribute="top" id="gdH-uC-ith"/>
+                            <constraint firstItem="8OF-Dg-01E" firstAttribute="leading" secondItem="wW6-aL-rsj" secondAttribute="leading" id="pPm-ZS-Ifp"/>
+                            <constraint firstItem="8OF-Dg-01E" firstAttribute="trailing" secondItem="wW6-aL-rsj" secondAttribute="trailing" id="weN-2F-LTi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wW6-aL-rsj"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sessions" id="hAa-ji-1Q8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Su8-6r-AZJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1637.5999999999999" y="897.30134932533736"/>
+        </scene>
         <!--Active SessionVC-->
         <scene sceneID="Hsv-SY-IZO">
             <objects>
@@ -251,6 +350,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="dN8-MP-hab"/>
+        <segue reference="Ljg-Er-7bD"/>
     </inferredMetricsTieBreakers>
 </document>
