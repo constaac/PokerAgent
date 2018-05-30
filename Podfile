@@ -6,6 +6,7 @@ target 'PokerAgent' do
   use_frameworks!
 
   pod 'RealmSwift', '~> 3.5.0'
+  pod 'Former'
 
   # Pods for PokerAgent
 
